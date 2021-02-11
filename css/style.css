@@ -22,6 +22,10 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Raleway', sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
 .page-header {
     height: 70px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -63,14 +67,14 @@ body {
     border-bottom-color: var(--color-primary);
 }
 
-.banner {
-    height: 842px;
+.opening {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-    background-image: url(../images/Background.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-
+.banner-content {
+    margin-top: 130px;
     display: flex;
     justify-items: left;
     align-items: center;
@@ -102,16 +106,17 @@ body {
     border-radius: 50px;
 }
 
+.opening-img {
+    width: 1630px;
+}
+
 .section1 {
-    height: 531px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: left;
 }
 
 .section1-title {
-    text-align: center;
     font: normal normal normal 36px/42px Raleway;
     color: var(--color-black);
     padding-top: 100px;
@@ -120,5 +125,328 @@ body {
 
 .section1-content {
     display: flex;
+    justify-content: center;
+    padding-bottom: 120px;
+}
+
+.section1-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 93px;
+    margin-left: 93px;
+}
+
+.section1 .circle {
+    content: "";
+    height: 63px;
+    width: 63px;
+    border-radius: 50%;
+    z-index: -1;
+    position: relative;
+}
+
+.section1-article1 .circle {
+    background-color: var(--color-redish);
+}
+
+.section1-article2 .circle {
+    background-color: var(--color-primary);
+}
+
+.section1-article3 .circle {
+    background-color: var(--color-green);
+}
+
+.section1-img {
+    position: absolute;
+    left: 50%;
+}
+
+.person {
+    top: 2%;
+}
+
+.eye {
+    top: 20%;
+}
+
+.catalog {
+    top: 2%;
+}
+
+.section1-article span {
+    text-align: center;
+    font: normal normal 800 20px/24px Raleway;
+    letter-spacing: 6px;
+    color: var(--color-black);
+    display: flex;
+    margin-top: 15px;
+}
+
+.section1-article p {
+    text-align: center;
+    font: normal normal normal 17px/20px Raleway;
+    color: var(--color-grey);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.benefits {
+    background-color: var(--color-light-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 105px;
+    padding-bottom: 105px;
+}
+
+.benefits-article {
+    width: 1124px;
+    height: 370px;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.benefits-article-2 {
+    flex-direction: row-reverse;
+}
+
+.benefits-article-1,
+.benefits-article-2 {
+    margin-bottom: 37px;
+}
+
+.benefits-header {
+    text-align: left;
+    font: normal normal normal 36px/42px Raleway;
+}
+
+.benefits-text {
+    text-align: left;
+    font: normal normal normal 16px/22px Open Sans;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.rectangle {
+    content: "";
+    width: 330px;
+    height: 4px;
+}
+
+.benefits-article-1 .rectangle {
+    background-color: var(--color-redish);
+}
+
+.benefits-article-2 .rectangle {
+    background-color: var(--color-primary);
+}
+
+.benefits-article-3 .rectangle {
+    background-color: var(--color-green);
+}
+
+.benefits-content {
+    width: 40%;
+}
+
+.laptop {
+    position: relative;
+}
+
+.laptop img {
+    height: 220px;
+    z-index: 2;
+    position: relative;
+}
+
+.laptop::before {
+    content: "";
+    height: 180px;
+    width: 180px;
+    background-color: var(--color-redish);
+    border-radius: 20%;
+    display: block;
+    position: absolute;
+    transform: rotate(45deg); 
+    top: -10px;
+    right: 0px;
+} 
+
+.iphone {
+    position: relative;
+    margin-top: 29px;
+}
+
+.iphone img {
+    height: 328px;
+    width: 426px;
+    position: relative;
+}
+
+.iphone::before {
+    content: "";
+    display: block;
+    background-color: var(--color-primary);
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    top: -25px
+}
+
+.benefits-article-3 {
+    background-color: transparent;
     justify-content: space-between;
+}
+
+.benefits-article-3 .benefits-content {
+   background-color: var(--color-white);
+   height: 370px;
+   width: 623px;
+   padding-top: 69px;
+   padding-left: 75px;
+   padding-right: 34px;
+}
+
+.trumpet {
+    height: 370px;
+    width: 440px;
+    background-color: var(--color-green);
+    border-radius: 3px;
+}
+
+.trumpet img {
+    height: 207px;
+    margin-top: 98px;
+    margin-bottom: 64px;
+    margin-left: 62px;
+}
+
+.pricing {
+    height: 660px;
+    background-color: var(--color-white);
+}
+
+.pricing-header {
+    text-align: center;
+    font: normal normal normal 36px/42px Raleway;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.pricing-article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.basic, 
+.premium {
+    height: 460px;
+    width: 370px;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+.professional {
+    height: 500px;
+    width: 405px;
+    border: solid 2px var(--color-primary);
+    border-radius: 10px;
+}
+
+.basic {
+    border-color: var(--color-redish);
+}
+
+.basic p {
+    color: var(--color-redish);
+}
+
+.professional p {
+    color: var(--color-primary);
+}
+
+.premium p {
+    color: var(--color-green);
+}
+
+.premium {
+    border-color: var(--color-green);
+}
+
+.pricing-article-header {
+    font: normal normal bold 20px/1px Raleway;
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+
+.pricing-article-text {
+    font: normal normal 300 46px/2px Open Sans;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.pricing-article span {
+    font: normal normal bold 12px/1px Raleway;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.pricing-article-list {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-article-list li {
+    padding: 15px;
+}
+
+.pricing-article-list li::before {
+    content: url(../images/Checkmark-1.svg);
+}
+
+.pricing-article .btn {
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    font: normal normal bold 13px/41px Open Sans;
+    color: var(--color-white);
+    border-radius: 50px;
+    bottom: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basic .btn {
+    background-color: var(--color-redish);
+}
+
+.professional .btn {
+    background-color: var(--color-primary);
+}
+
+.premium .btn {
+    background-color: var(--color-green);
 }
