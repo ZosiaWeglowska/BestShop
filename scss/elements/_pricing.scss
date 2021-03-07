@@ -1,0 +1,160 @@
+.pricing {
+    height: 660px;
+    background-color: $color-white;
+}
+
+@media (max-width: 1352px) {
+    .pricing {
+        height: auto;
+    }
+}
+
+.pricing-header {
+    text-align: center;
+    font: normal normal normal 36px/42px Raleway;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+@media (max-width: 1352px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.pricing-article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.basic, 
+.premium {
+    height: 460px;
+    width: 370px;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+.professional {
+    height: 500px;
+    width: 405px;
+    border: solid 2px $color-primary;
+    border-radius: 10px;
+}
+
+@media (max-width: 1352px) {
+    .basic,
+    .premium,
+    .professional {
+        width: 370px;
+        margin-bottom: 50px;
+    }
+}
+
+.basic {
+    border-color: $color-redish;
+}
+
+.basic p {
+    color: $color-redish;
+}
+
+.professional p {
+    color: $color-primary;
+}
+
+.premium p {
+    color: $color-green;
+}
+
+.premium {
+    border-color: $color-green;
+}
+
+.pricing-article-header {
+    font: normal normal bold 20px/1px Raleway;
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+
+.pricing-article-text {
+    font: normal normal 300 46px/2px Open Sans;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.pricing-article span {
+    font: normal normal bold 12px/1px Raleway;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.pricing-article-list {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-article-list li {
+    text-align: center;
+    font: normal normal normal 14px/41px Open Sans;
+}
+
+.pricing-list-item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url(../images/Ckechmark-1.svg);
+}
+
+.pricing-list-item-not::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url(../images/Close.svg);
+}
+
+.pricing-article .btn {
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+    font: normal normal bold 13px/41px Open Sans;
+    color: var(--color-white);
+    border-radius: 50px;
+    bottom: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-article .btn:active {
+    cursor: pointer;
+}
+
+.basic .btn {
+    background-color: $color-redish;
+}
+
+.professional .btn {
+    background-color: $color-primary;
+}
+
+.premium .btn {
+    background-color: $color-green;
+} 

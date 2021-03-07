@@ -1,0 +1,123 @@
+
+a {
+    text-decoration: none;
+}
+.page-header {
+    height: 70px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    display: flex;
+    align-items: center;
+}
+
+.page-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-logo {
+    font: normal normal 300 32px/37px Raleway;
+    color: $color-primary;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-mobile-list {
+    position: absolute;
+    top: -90px;
+    left: 0px;
+}
+
+@media (max-width: 1352px) {
+    .page-nav {
+        display: none;
+    }
+
+    .hamburger-icon {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburger-icon:hover {
+        cursor: pointer;
+    }
+
+    .hamburger-icon span {
+        display: inline-block;
+        width: 25px;
+        height: 2px;
+        margin: 2px;
+        background-color: $color-primary;
+    }
+
+    .nav-mobile-list {
+        background-color: $color-white;
+        position: absolute;
+        width: 100vw;
+        top: -1100px;
+        left: 0px;
+        box-shadow: 0px 3px 6px #00000029;
+        padding: 15px 0 15px 0;
+    }
+
+     .nav-mobile-list a {
+        text-transform: uppercase;
+        text-decoration: none;
+        font: normal normal bold 11px/15px Open Sans;
+        letter-spacing: 3.28px;
+        color: $color-grey;
+        border: solid 3px transparent;
+        padding: 25px 15px 25px 15px;
+    }
+
+    .hamburger:checked {
+        ~ .nav-mobile-list {
+            top: 100px;
+            left: 0px;
+            transition: 0.4s;
+        }
+
+        ~ .hamburger-icon span {
+            &:first-child {
+                transform: rotate(45deg) translateX(8px);
+            }
+            &:nth-child(2) {
+                opacity: 0;
+            }
+            &:last-child {
+                transform: rotate(-45deg) translateX(8px);
+            }
+            
+        }
+
+    }
+        
+}
+
+.page-nav-list {
+     display: flex;
+ }
+ 
+.page-nav-list li {
+    margin-left: 20px;
+}
+
+.page-nav-list a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font: normal normal bold 11px/15px Open Sans;
+    letter-spacing: 3.28px;
+    color: var(--color-grey);
+    border: solid 3px transparent;
+    padding: 25px 15px 25px 15px;
+}
+
+.page-nav-list a:hover {
+    color: var(--color-black);
+    border: solid 3px transparent;
+    border-bottom-color: var(--color-primary);
+}

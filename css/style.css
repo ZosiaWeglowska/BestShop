@@ -1,4 +1,4 @@
-* {
+/* /* * {
     box-sizing: border-box;
 }
 
@@ -418,11 +418,26 @@ a {
 }
 
 .pricing-article-list li {
-    padding: 15px;
+    text-align: center;
+    font: normal normal normal 14px/41px Open Sans;
 }
 
-.pricing-article-list li::before {
-    content: url(../images/Checkmark-1.svg);
+.pricing-list-item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url(../images/Ckechmark-1.svg);
+}
+
+.pricing-list-item-not::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url(../images/Close.svg);
 }
 
 .pricing-article .btn {
@@ -439,6 +454,10 @@ a {
     align-items: center;
 }
 
+.pricing-article .btn:active {
+    cursor: pointer;
+}
+
 .basic .btn {
     background-color: var(--color-redish);
 }
@@ -449,4 +468,4 @@ a {
 
 .premium .btn {
     background-color: var(--color-green);
-}
+}  *
