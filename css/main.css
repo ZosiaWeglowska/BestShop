@@ -661,74 +661,20 @@ a {
   background-color: #55DFB4;
 }
 
-.contact {
+.calc__columns {
   display: flex;
 }
 
-@media (max-width: 1352px) {
-  .contact {
-    flex-direction: column;
-  }
-}
-.contact-column {
-  height: 500px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.contact-column .contact-header {
-  font-family: "Raleway", sans-serif;
-  font-size: 49px;
-}
-.contact-column .contact-txt {
-  font-size: 16px;
-  padding-top: 22px;
-  padding-bottom: 42px;
+.calc__input {
+  border: solid 1px;
+  margin: 20px;
 }
 
-.contact-left {
-  padding-left: 200px;
+.calc__summary .list__item {
+  margin: 10px;
 }
 
-@media (max-width: 1352px) {
-  .contact-left {
-    padding-left: 0px;
-  }
-}
-.contact-detailes {
-  display: flex;
-  align-items: center;
-}
-.contact-detailes a {
-  text-decoration: none;
-  color: gray;
-  font-size: 16px;
-}
-
-@media (max-width: 1352px) {
-  .contact-detailes {
-    flex-direction: column;
-  }
-}
-.contact-right {
-  padding-right: 200px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.contact-form label:nth-of-type(1),
-.contact-form label:nth-of-type(2) {
-  text-transform: uppercase;
-  font-size: 11px;
-  font-weight: bold;
-  color: #08A6E4;
-}
-.contact-form label:nth-of-type(3) {
-  font-size: 12;
-  color: #08A6E4;
+.dnone {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
